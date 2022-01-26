@@ -34,4 +34,14 @@ function creationCarte(user) {
     affichage.innerHTML = cartHTML
 }
 
+form.addEventListener('submit', (e) => {
+    e.preventDefault ();
+
+    if (inpRecherche.value.length > 0) {
+
+        dataGithub(inpRecherche.value);
+        inpRecherche.value = "";
+        
+    }
+})
 
